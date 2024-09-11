@@ -7,6 +7,7 @@
  *
  */
 
+import SesamiMouseCursor from './sesamiCustomCursor.js';
 import { toUnsigned32bit, toSigned32bit } from './util/int.js';
 import * as Log from './util/logging.js';
 import { encodeUTF8, decodeUTF8 } from './util/strings.js';
@@ -3243,15 +3244,5 @@ RFB.cursors = {
         hotx: 0, hoty: 0,
     },
 
-    dot: {
-        /* eslint-disable indent */
-        rgbaPixels: new Uint8Array([
-            255, 255, 255, 255,   0,   0,   0, 255, 255, 255, 255, 255,
-              0,   0,   0, 255,   0,   0,   0,   0,   0,   0,  0,  255,
-            255, 255, 255, 255,   0,   0,   0, 255, 255, 255, 255, 255,
-        ]),
-        /* eslint-enable indent */
-        w: 3, h: 3,
-        hotx: 1, hoty: 1,
-    }
+    dot: SesamiMouseCursor,
 };
