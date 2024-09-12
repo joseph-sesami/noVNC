@@ -9,7 +9,16 @@
     "test": "tests"
   },
   "files": [
-    "lib",
+    "app",
+	"core",
+	"po",
+	"snap",
+	"tests",
+	"utils",
+	"vendor",
+	"vnc.html",
+	"package.json",
+	"lib",
     "AUTHORS",
     "VERSION",
     "docs/API.md",
